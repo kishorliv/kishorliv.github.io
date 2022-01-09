@@ -31,10 +31,12 @@ function displayJoke() {
 }
 
 function displayLink() {
-  const a = document.createElement("a");
-  var linkText = document.createTextNode("→→→");
-  a.appendChild(linkText);
-  a.title = "My site";
-  a.href = "https://kishorneupane.com";
-  linkDiv.appendChild(a);
+  if (!linkDiv.hasChildNodes()) {
+    const a = document.createElement("a");
+    var linkText = document.createTextNode("→→→");
+    a.appendChild(linkText);
+    a.title = "My site";
+    a.href = "https://kishorneupane.com";
+    linkDiv.appendChild(a);
+  }
 }

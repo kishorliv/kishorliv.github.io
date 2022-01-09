@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+a {
+  color: #000;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  background-color: #deb887;
+}
+
+.app__bluepill {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  transition: 0.5s all;
+}
+
+.app__bluepill:hover {
+  color: #fff;
+  background-color: rgba(47, 94, 196, 0.9);
+}
+
+.app__redpill {
+  flex: 1 1 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  transition: 0.5s all;
+}
+
+.app__redpill:hover {
+  background-color: rgba(218, 46, 24, 0.9);
+}
+
+.app_redpill-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
